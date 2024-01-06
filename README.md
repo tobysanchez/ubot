@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-    <a href="https://github.com/rootalocalhost-dev/UmaruV4">
+    <a href="https://github.com/rootalocalhost-dev/UmaruV4-Bot">
         <img src="https://i.imgur.com/wgEmjfB.png" alt="Logo">
     </a>
 
@@ -8,16 +8,16 @@
 
 
 <p align="center">
-	<img alt="size" src="https://img.shields.io/github/repo-size/rootalocalhost-dev/UmaruV4?style=flat-square&label=File%20size">
-	<img alt="code-version" src="https://img.shields.io/badge/dynamic/json?color=blue&label=code%20version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Frootalocalhost-dev%2FUmaruV4%2Fmaster%2Fpackage.json&style=flat-square">
-    	<img alt="visitors" src="https://visitor-badge.laobi.icu/badge?page_id=rootalocalhost-dev.UmaruV4">
+	<img alt="size" src="https://img.shields.io/github/repo-size/rootalocalhost-dev/UmaruV4-Bot?style=flat-square&label=File%20size">
+	<img alt="code-version" src="https://img.shields.io/badge/dynamic/json?color=blue&label=code%20version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Frootalocalhost-dev%2FUmaruV4-Bot%2Fmaster%2Fpackage.json&style=flat-square">
+    	<img alt="visitors" src="https://visitor-badge.laobi.icu/badge?page_id=rootalocalhost-dev.UmaruV4-Bot">
   <img alt="size" src="https://img.shields.io/badge/license-AGPL%203.0-blue?style=flat-square" style="max-width: 100%;">
 </p>
  <p>📖 Table of Contents</p>
     <ul>
         <li><a href="#-what-is-umaruv4">💠 What is UmaruV4?</a></li>
         <li><a href="#-appstate-encryption">🔐 Appstate Encryption</a></li>
-        <li><a href="#-support-the-mirai-format">🌐 Support the Mirai format</a></li>
+        <li><a href="#-support-the-mirai-format">🌐 Support the Mirai/Goatbot format</a></li>
         <li><a href="#-enabling-and-disabling-prefixes">🛠 Enabling and Disabling Prefixes</a></li>
         <li><a href="#-journaling-mechanism">📝 Journaling Mechanism</a></li>
         <li><a href="#-autoleave-inactive">⌛ Autoleave inactive</a></li>
@@ -37,14 +37,14 @@
 
 <img src="https://i.imgur.com/uerBqKR.jpg" style="width:360px;"></img>
 
-## 🌐 Support the Mirai Format
+## 🌐 Support the Mirai/Goatbot Format
 
-<p>module.exports.run, module.exports.handleEvent, module.exports.handleReply, module.exports.handleReaction, it just works.<br><br>Limitations: Mirai formats in UmaruV4 will not work, such as Mirai global variables, Mirai directories, other CommonJS files that use the .js extension, and other Mirai parameters.<br><br>Preview:</p>
+<p>module.exports.run/module.exports.onStart, module.exports.handleEvent/module.exports.onChat, module.exports.handleReply/module.exports.onReply, module.exports.handleReaction/module.exports.onReaction, it just works.<br><br>Limitations: Mirai/Goatbot formats in UmaruV4 will not work, such as Mirai/Goatbot global variables, Mirai/Goatbot directories, other CommonJS files that use the .js extension, and other Mirai/Goatbot parameters.<br><br>Preview:</p>
 <img src="https://i.imgur.com/WSPZFzl.jpg" style="width:360px;"></img>
 
 ## 🛠 Enabling and Disabling Prefixes
 
-<p>You can enable or disable the prefix by just putting true or false in the isPrefix property in the export const setup.<br><br>Preview:</p>
+<p>You can enable or disable the prefix by just putting true or false in the isPrefix property in the export const setup. You can make this both using isPrefix: "both".<br><br>Preview:</p>
 
 <img src="https://i.imgur.com/ONrYObB.jpg" style="width:360px;"></img>
 
